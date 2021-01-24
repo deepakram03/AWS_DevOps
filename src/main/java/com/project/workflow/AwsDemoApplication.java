@@ -16,7 +16,7 @@ public class AwsDemoApplication {
 	@GetMapping("/demo")  
 	public String demo()
 	{     
-	return "Hi Buddy, Ur attempt is success";  
+	return "Hi Buddy, Ur automation is success";  
 	}  
 
 }
