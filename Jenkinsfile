@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("deepakram03/AWSDevOps")
+        app = docker.build("deepakram03/awsdevops")
     }
 
     stage('Test image') {
