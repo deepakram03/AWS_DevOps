@@ -14,7 +14,7 @@ pipeline {
 		}
     }
     
-    stage('Push image') {
+    stage('Login Docker') {
     steps{
         sh "docker login -u deepakram03 -p Enfield@93"
     }
