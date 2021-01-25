@@ -10,7 +10,7 @@ pipeline {
         stage('Build image') {
         steps{
         /* This builds the actual image */
-		sh "docker build -t deepakram03/awsdevop .
+		sh "docker build -t deepakram03/awsdevop ."
 		}
     }
     
