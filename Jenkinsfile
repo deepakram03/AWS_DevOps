@@ -23,7 +23,7 @@ pipeline {
     stage('Push image') {
     steps{
     sh "docker push deepakram03/awsdevop"
-    }
+    	}
     }
     
     stage("Deploy to staging") {
