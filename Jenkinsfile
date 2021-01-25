@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build'){
             steps{
-                sh "mvn -f AWS_DevOps/pom.xml clean package"
+                sh "mvn -f pom.xml clean package"
             }
         }
     }
