@@ -28,10 +28,9 @@ pipeline {
     
     stage("Deploy to staging") {
      steps {
- 
        	sh "docker run -d --rm -p 1210:1210 --name awsdevop deepakram03/awsdevop"
      }
-}
+	}
     
     
     }
