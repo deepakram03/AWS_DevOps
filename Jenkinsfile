@@ -4,14 +4,9 @@ pipeline {
         stage('Build'){
             steps{
                 sh "mvn -f pom.xml clean package"
+                docker.build("deepakram03/awsdevop")
             }
         }
-        
-        stage('Build image') {
-        /* This builds the actual image */
-
-        docker.build("deepakram03/awsdevop")
-    }
     
     stage('Push image') {
         /* 
